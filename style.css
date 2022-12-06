@@ -118,25 +118,8 @@ header h1 {
 
 .container-cards {
     margin: 5% 10%;
-    background-color: #3f2aff;
-    display: block;
 }
 
-.card1 {
-    background-color: #3f2aff;
-}
-
-.card2 {
-    background-color: #ffcdc2;
-}
-
-.card3 {
-    background-color: #74f7b9;
-}
-
-.card4 {
-    background-color: #242424;
-}
 .container-carousel{
     margin: 10%;
     background-color: #242424;
@@ -224,3 +207,91 @@ header h1 {
     background-color: black;
 }
 
+.container-cards {
+   display: flex;
+    flex-wrap: wrap;
+    font-family: Graphik,sans-serif;
+
+}
+
+.card1{
+    width: 560px;
+    height: 500px;
+    background-color: #3f2aff;
+    border-radius: 15px;
+    margin:15px;
+    text-align: center;
+    align-items: center;
+    color:#f7f7f5;
+
+}
+.card2{
+    width: 560px;
+    height: 500px;
+    background-color:#ffcdc2 ;
+    border-radius: 15px;
+    margin:15px;
+    text-align: center;
+    align-items: center;
+    color:#242424;
+
+
+}
+.card3{
+    width: 560px;
+    height: 500px;
+    background-color:#74f7b9 ;
+    border-radius: 15px;
+    margin:15px;
+    text-align: center;
+    align-items: center;
+    color:#242424;
+
+
+}
+.card4{
+     width: 560px;
+     height: 500px;
+    background-color: #242424;
+    border-radius: 15px;
+    margin:15px;
+    text-align: center;
+    align-items: center;
+    color:#f7f7f5;
+ }
+
+.container-cards img {
+    width: 65%;
+}
+
+.left-diagonal-button {
+    width: 40%;
+    height: 50px;
+    font-family: Graphik,sans-serif;
+    font-size: 20px;
+    background-color: rgba(28,28,28,0);
+    border-radius: 20px;
+    border: 1px solid;
+    color: #f7f7f5;
+    margin-top: 25px;
+}
+
+.right-diagonal-button {
+    width: 40%;
+    height: 50px;
+    font-family: Graphik,sans-serif;
+    font-size: 20px;
+    background-color: rgba(28,28,28,0);
+    border-radius: 20px;
+    border: 1px solid;
+    color: #242424;
+    margin-top: 25px;
+
+}
+
+.container-cards button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+
+}
