@@ -62,11 +62,11 @@ header h1 {
 }
 
 .container-courses button:hover {
-    background-color: #e2dfff;
+    background-color: #5B79FFFF;
 }
 
 .container-information{
-    background-color: #e2dfff;
+    background-color: #5b79ff;
     text-align: center;
     margin: 0 10%;
     padding: 2%;
@@ -77,6 +77,7 @@ header h1 {
     font-family: Graphik,sans-serif;
     font-size: 40px;
 }
+
 .informations {
     display: flex;
     justify-content: space-around;
@@ -86,27 +87,24 @@ header h1 {
 .info {
     text-align: left;
     background-color: #f7f7f5;
-    width: 14em;
-    border-radius: 15%;
+    width: 12em;
+    border-radius: 5%;
+    padding: 15px 10px;
 }
 
 .info-p {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
     font-family: Nunito, sans-serif;
-    padding-left: 5px;
-
 }
 
 .second-p {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.4;
     font-weight: 300;
     font-family: Graphik,sans-serif;
-    padding-left: 5px;
-
 }
 
 .icon img {
@@ -211,15 +209,15 @@ header h1 {
    display: flex;
     flex-wrap: wrap;
     font-family: Graphik,sans-serif;
-
+    justify-content: center;
 }
 
 .card1{
     width: 560px;
     height: 500px;
-    background-color: #3f2aff;
+    background-color: #a3a3ff;
     border-radius: 15px;
-    margin:15px;
+    margin: 15px;
     text-align: center;
     align-items: center;
     color:#f7f7f5;
@@ -230,34 +228,31 @@ header h1 {
     height: 500px;
     background-color:#ffcdc2 ;
     border-radius: 15px;
-    margin:15px;
     text-align: center;
     align-items: center;
     color:#242424;
-
-
+    margin: 15px;
 }
 .card3{
     width: 560px;
     height: 500px;
     background-color:#74f7b9 ;
     border-radius: 15px;
-    margin:15px;
     text-align: center;
     align-items: center;
     color:#242424;
-
-
+    margin: 15px;
 }
 .card4{
      width: 560px;
      height: 500px;
     background-color: #242424;
     border-radius: 15px;
-    margin:15px;
     text-align: center;
     align-items: center;
     color:#f7f7f5;
+    margin: 15px;
+
  }
 
 .container-cards img {
