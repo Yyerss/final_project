@@ -295,3 +295,20 @@ header h1 {
     border: 1px solid black;
 
 }
+footer{
+    background-color: #242424;
+    color:#f7f7f5;
+    padding:10px 25px;
+    font-family: Arial,sans-serif;
+
+}
+.up-footer{
+    display: flex;
+    justify-content: space-between;
+    font-size:12px;
+
+}
+.bottom-footer{
+    display: flex;
+    justify-content: space-between;
+}
