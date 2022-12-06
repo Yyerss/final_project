@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #f7f7f5 ;
-
+    overflow-x: hidden;
 }
 
 header {
@@ -136,5 +136,91 @@ header h1 {
 
 .card4 {
     background-color: #242424;
+}
+.container-carousel{
+    margin: 10%;
+    background-color: #242424;
+    width: 80%;
+    height: 110vh;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.container-carousel h1,h2{
+    color: white;
+    text-align: center;
+}
+
+
+.slide {
+    bottom: 15%;
+    width: 60%;
+    height: 200px;
+    position: absolute;
+    transition: all 0.5s;
+
+}
+.catalog-popular__decor{
+    padding-top: 3%;
+    padding-left: 44%;
+}
+.slide img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-prev {
+    top: 150%;
+    left: 13%;
+}
+
+.btn-next {
+    top: 150%;
+    right: 13%;
+}
+.slider {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    /*overflow: hidden;  !* <===  *!*/
+    border-radius: 15px;
+}
+.viewAll{
+
+    margin-left: 40%;
+    background: none;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    transition: 0.4s;
+}
+.viewAll:hover{
+    background-color: black;
 }
 
