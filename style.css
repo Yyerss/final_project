@@ -140,6 +140,9 @@ header h1 {
     transition: all 0.5s;
 }
 
+.slide a {
+    text-decoration: none;
+}
 .catalog-popular__decor{
     padding-top: 3%;
     padding-left: 44%;
@@ -157,8 +160,6 @@ header h1 {
     background-color: #47c293;
 }
 
-
-
 .course-card h2 {
     font-size: 20px;
     color: black;
@@ -167,6 +168,7 @@ header h1 {
 
 .course-card p {
     font-size: 14px;
+    color: black;
 }
 
 .course-card img {
@@ -232,7 +234,6 @@ header h1 {
     flex-wrap: wrap;
     font-family: Graphik,sans-serif;
     justify-content: center;
-
     margin: 5% 10%;
 
 }
@@ -240,7 +241,7 @@ header h1 {
 .card1{
     width: 560px;
     height: 500px;
-    background-color: #a3a3ff;
+    background-color: #60b3ff;
     border-radius: 15px;
     margin: 15px;
     text-align: center;
@@ -313,8 +314,8 @@ header h1 {
     background-color: black;
     color: white;
     border: 1px solid black;
-
 }
+
 footer{
     background-color: #242424;
     color:#f7f7f5;
@@ -332,3 +333,84 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
+.about-course {
+    margin: 3% 6% 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: Graphik,sans-serif;
+    background-color: #60b3ff;
+    border-radius: 15px;
+    padding: 3% 5%;
+}
+
+.left-column{
+    width: 50%;
+}
+
+.left-column p {
+    font-size: 18px;
+    padding: 0 0 40px;
+}
+
+.left-column h1 {
+    font-size: 60px;
+}
+
+.left-column button {
+    width: 40%;
+    height: 55px;
+    font-family: Graphik,sans-serif;
+    font-size: 18px;
+    background-color: #3d3bff;
+    border-radius: 10px;
+    border: 1px solid #3d3bff;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+
+.left-column button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.about-course img {
+    width: 470px;
+    height: 470px;
+}
+
+.container-whom {
+    text-align: center;
+    margin: 0 10% 5%;
+    padding: 2%;
+    border-radius: 2%;
+}
+
+.whom-p {
+    font-family: Graphik,sans-serif;
+    font-size: 40px;
+}
+
+.main-whom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.whom{
+    width: 252px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 5px 15px;
+}
+
+.main-icon{
+    margin: 20px;
+    text-decoration: none;
+    font-family: Graphik,sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+

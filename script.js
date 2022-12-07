@@ -33,3 +33,15 @@ prevSlide.addEventListener("click", function () {
         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
     });
 });
+
+function changePage(element) {
+
+    console.log( element.getElementsByTagName("h2")[0].innerHTML)
+
+
+    window.location.href = 'course.html';
+    console.log(document.getElementById("course-name").innerHTML);
+    console.log(document.getElementById("about-course").style.backgroundColor);
+}
+
+
