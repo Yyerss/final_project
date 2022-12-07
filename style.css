@@ -114,10 +114,6 @@ header h1 {
     object-fit: cover;
 }
 
-.container-cards {
-    margin: 5% 10%;
-}
-
 .container-carousel{
     margin: 10%;
     background-color: #242424;
@@ -125,12 +121,16 @@ header h1 {
     height: 110vh;
     border-radius: 15px;
     overflow: hidden;
+    font-family: Graphik,sans-serif;
+
 }
+
 .container-carousel h1,h2{
     color: white;
     text-align: center;
-}
+    font-weight: 500;
 
+}
 
 .slide {
     bottom: 15%;
@@ -138,18 +138,40 @@ header h1 {
     height: 200px;
     position: absolute;
     transition: all 0.5s;
-
 }
+
 .catalog-popular__decor{
     padding-top: 3%;
     padding-left: 44%;
 }
-.slide img {
-    width: 90%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+
+
+.course-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 424px;
+    height: 190px;
+    border-radius: 15px;
     margin-left: 5%;
+    background-color: #47c293;
+}
+
+
+
+.course-card h2 {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.course-card p {
+    font-size: 14px;
+}
+
+.course-card img {
+    width: 35%;
+    height: 70%;
 }
 
 .btn {
@@ -210,6 +232,9 @@ header h1 {
     flex-wrap: wrap;
     font-family: Graphik,sans-serif;
     justify-content: center;
+
+    margin: 5% 10%;
+
 }
 
 .card1{
@@ -293,7 +318,7 @@ header h1 {
 footer{
     background-color: #242424;
     color:#f7f7f5;
-    padding:10px 25px;
+    padding:15px 40px;
     font-family: Arial,sans-serif;
 
 }
