@@ -15,8 +15,8 @@ header {
 header h1 {
     font-family: Graphik,sans-serif;
     font-size: 30px;
-
 }
+
 .navbar {
     width: 45%;
     display: flex;
@@ -53,12 +53,19 @@ header h1 {
     font-size: 60px;
 }
 
-.container-courses button {
+.categories button {
     font-family: Graphik,sans-serif;
     font-size: 20px;
     background-color: #f7f7f5;
     border-radius: 20px;
     border: 1px solid;
+    margin-right: 5px;
+
+}
+
+.categories button a {
+    text-decoration: none;
+    color: black;
 }
 
 .container-courses button:hover {
@@ -152,8 +159,9 @@ header h1 {
     width: 424px;
     height: 190px;
     border-radius: 15px;
-    margin-left: 5%;
+    margin-left: 10px;
     background-color: #47c293;
+    margin-bottom: 15px;
 }
 
 .course-card h2 {
@@ -410,3 +418,9 @@ footer{
     font-weight: 600;
 }
 
+.course-store {
+    margin: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
