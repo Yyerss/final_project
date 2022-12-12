@@ -1,7 +1,6 @@
 body {
     background-color: #f7f7f5 ;
-
-
+    margin: 0;
 }
 .infous {
     display:flex;
@@ -53,13 +52,11 @@ footer{
     color:#f7f7f5;
     padding:15px 40px;
     font-family: Arial,sans-serif;
-
 }
 .up-footer{
     display: flex;
     justify-content: space-between;
     font-size:12px;
-
 }
 .bottom-footer{
     display: flex;
