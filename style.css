@@ -65,7 +65,8 @@ header h1 {
     border-radius: 20px;
     border: 1px solid;
     margin-right: 5px;
-
+    transition: .3s;
+    cursor: pointer;
 }
 
 .categories button a {
@@ -167,6 +168,12 @@ header h1 {
     margin-left: 10px;
     background-color: #47c293;
     margin-bottom: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.course-card:hover{
+    transform: scale(1.03);
 }
 
 .course-card h2 {
@@ -305,6 +312,8 @@ header h1 {
     border: 1px solid;
     color: #f7f7f5;
     margin-top: 25px;
+    transition: .3s;
+    cursor: pointer;
 }
 
 .right-diagonal-button {
@@ -317,7 +326,8 @@ header h1 {
     border: 1px solid;
     color: #242424;
     margin-top: 25px;
-
+    transition: .3s;
+    cursor: pointer;
 }
 
 .container-cards button:hover {
@@ -377,6 +387,8 @@ footer{
     border: 1px solid #3d3bff;
     color: #FFFFFF;
     margin-top: 25px;
+    transition: .3s;
+    cursor: pointer;
 }
 
 .left-column button:hover {
