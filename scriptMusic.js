@@ -17,16 +17,27 @@ let treck=0;
 let pause;
 function playMusic(id){
     document.getElementById("1").pause()
+    document.getElementById("1").currentTime=0
     document.getElementById("2").pause()
+    document.getElementById("2").currentTime=0;
     document.getElementById("3").pause()
+    document.getElementById("3").currentTime=0;
     document.getElementById("4").pause()
+    document.getElementById("4").currentTime=0;
     document.getElementById("5").pause()
+    document.getElementById("5").currentTime=0;
     document.getElementById("6").pause()
+    document.getElementById("6").currentTime=0;
     document.getElementById("7").pause()
+    document.getElementById("7").currentTime=0;
     document.getElementById("8").pause()
+    document.getElementById("8").currentTime=0;
     document.getElementById("9").pause()
+    document.getElementById("9").currentTime=0;
     document.getElementById("10").pause()
+    document.getElementById("10").currentTime=0;
     document.getElementById("11").pause()
+    document.getElementById("11").currentTime=0;
     let audio = document.getElementById(id)
  if (pause == audio) {
         audio.pause()
