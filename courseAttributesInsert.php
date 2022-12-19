@@ -15,10 +15,7 @@ if(isset($_POST['courseName'])){
     $backgroundColor = $_POST['backgroundColor'];
     $imgSrc = $_POST['imgSrc'];
 
-    $sql = "delete from uide";
-    $result = mysqli_query($conn, $sql);
-    // $sql = "update uide set course_name = '".$courseName."', course_backrgound = '".$backgroundColor."', course_image = '".$imgSrc."' where id = 1";
-    $sql = "insert into uide(id, course_name,course_backrgound, course_image) values (1, '".$courseName."', '".$backgroundColor."','".$imgSrc."')";
+    $sql = "insert into uide(id, course_name,course_background, course_image) values (null, '".$courseName."', '".$backgroundColor."','".$imgSrc."')";
     $result = mysqli_query($conn, $sql);
 
 }

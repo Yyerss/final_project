@@ -10,9 +10,7 @@ if($link==false) {
     die("Error: couln't connect". mysqli_connect_error());
 }
 
-if(isset($_POST['courseName'])) {
-   
-    $sql = "select * from uide where id = 1";
+    $sql = "select * from uide where id = (SELECT MAX(id) FROM uide)";
 
     $result = mysqli_query($link, $sql);
 
@@ -22,13 +20,5 @@ if(isset($_POST['courseName'])) {
         $data[] = $row;
       }
       $jsonData = json_encode($data);
-
-    if(mysqli_num_rows($result)==1) {
-        echo $jsonData;
-        exit();
-    }
-    else {
-        echo "Error";
-    }
-}
+      echo $jsonData;
 ?>
