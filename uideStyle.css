@@ -4,7 +4,10 @@ body{
     background-color: #f7f7f5 ;
     overflow-x: hidden;
 }
-
+h1{
+    font-family: Graphik,sans-serif;
+    font-size: 30px;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -466,14 +469,31 @@ footer{
     justify-content: center;
 }
 .track{
+    height: 50px;
+    background-color: #242424;
+    border-radius: 10px;
+    border-color: gray;
     width: 50%;
     display: flex;
-    justify-content: space-around;
     margin: 10px auto;
+    cursor: pointer;
+    transition: .3s;
+}
+.track:hover{
+    transform: scale(1.1);
 }
 .track img{
+    margin-top: auto;
+    margin-bottom: auto;
     width: 40px;
     height: 40px;
+}
+.track h3{
+    width: 200px;
+    color: white;
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .playlist{
     display: flex;
@@ -482,12 +502,11 @@ footer{
     justify-content: center;
     margin: 10%;
 }
-.gradient{
-    background: rgb(1,233,255);
-    background: linear-gradient(0deg, rgba(1,233,255,1) 0%, rgba(213,252,251,1) 0%, rgba(247,247,245,1) 85%);
-}
+
 .audio-track{
-    margin: auto;
+    margin-left: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
     width: 150px;
     height: 3px;
     background-color: #dddddd;
