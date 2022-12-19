@@ -13,7 +13,7 @@ let playlist = [
     'The-Weekend-I-Was-Never-There-speed-up.m4a'
 ];
 var times = document.getElementsByClassName("time")
-let treck;
+let treck=0;
 
 function playMusic(id){
     document.getElementById("1").pause()
@@ -31,10 +31,27 @@ function playMusic(id){
     if (play == 0){
         audio.play()
         play++;
+        setInterval(function (){
+            let audiotime = Math.round(audio.currentTime)
+            let audioLength = Math.round(audio.duration)
+            if (audiotime == audioLength && treck<11){
+                treck++;
+                audio.src='music/'+playlist[treck]
+                audio.currentTime=0;
+                audio.play();
+            }else if (audiotime == audioLength && treck>=11){
+                treck=0;
+                audio.src='music/'+playlist[treck]
+                audio.currentTime=0;
+                audio.play();
+
+            }
+        },10)
 
     }else if (play==1){
         audio.pause();
         play=0;
     }
+
 
 }
