@@ -4,7 +4,10 @@ body{
     background-color: #f7f7f5 ;
     overflow-x: hidden;
 }
-
+h1{
+    font-family: Graphik,sans-serif;
+    font-size: 30px;
+}
 header {
     display: flex;
     justify-content: space-between;
