@@ -1,0 +1,40 @@
+let play = 0;
+let playlist = [
+    'ALPHA-DAU-mood-video.m4a',
+    'BTS-Jungkook-2U-Cover-LYRICS-HAPPY-BIRTHDAY-ANGEL.m4a',
+    'Dosmukasan-Sagyndym-Seni-1971.m4a',
+    'Jungkook-Paper-Hearts-Lyrics.m4a',
+    'lee-hi-only-easy-lyrics.m4a',
+    'M-B-B-A-B-B-D.m4a',
+    'Moldanazar-Мейірімді-бол.m4a',
+    'Orynkhan-Menimen-bol.m4a',
+    'Pompeya-90.m4a',
+    'Son-Pascal-Men-Seni-Suyemin.m4a',
+    'The-Weekend-I-Was-Never-There-speed-up.m4a'
+];
+var times = document.getElementsByClassName("time")
+let treck;
+
+function playMusic(id){
+    document.getElementById("1").pause()
+    document.getElementById("2").pause()
+    document.getElementById("3").pause()
+    document.getElementById("4").pause()
+    document.getElementById("5").pause()
+    document.getElementById("6").pause()
+    document.getElementById("7").pause()
+    document.getElementById("8").pause()
+    document.getElementById("9").pause()
+    document.getElementById("10").pause()
+    document.getElementById("11").pause()
+    let audio = document.getElementById(id)
+    if (play == 0){
+        audio.play()
+        play++;
+
+    }else if (play==1){
+        audio.pause();
+        play=0;
+    }
+
+}
