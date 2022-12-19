@@ -8,38 +8,58 @@
 </head>
 <body>
 
-    <header>
-        <h1 onclick="window.location.href = 'uide.html'">UIDE</h1>
-    <div class="navbar">
-        <a href="aboutus.html">Bız jaily</a>
-        <a href="chillPage.html">Chill</a>
-        <a href="profile.html">Profile</a>
-    </div>
+<div class="mainProfile" id = "mainProfile">
+<header>
+    <h1 onclick="window.location.href = 'uide.html'">UIDE</h1>
+<div class="navbar">
+    <a href="aboutus.html">Bız jaily</a>
+    <a href="chillPage.html">Chill</a>
+    <a href="profile.html">Profile</a>
+    <img src="images/logSign.png" onclick="swapToSign()" id = "logSign">
+</div>
 </header>
 
 
 <div class="profileText">
-    <h1>Profile</h1>
+<h1>Profile</h1>
 </div>
 <div class="me">
-    <div class="leftPartProfile">
-        <h1>About you</h1>
-        <p></p>
-    </div>
-    <div class="centerProfile">
-        <img src="images/user.png">
-    </div>
-    <div class="rightPartProfile">
-        <h1>Details</h1>
-        <h3>Name</h3>
-        <p id = "nameUser"></p>
-        <h3>Age</h3>
-        <p id = "location"></p>
-        <img src="images/instalogo.png">
-    </div>
+<div class="leftPartProfile">
+    <h1>About you</h1>
+    <p id = "aboutMe"></p>
+</div>
+<div class="centerProfile">
+    <img src="images/user.png">
+</div>
+<div class="rightPartProfile">
+    <h1>Details</h1>
+    <h3>Name</h3>
+    <p id = "nameUser"></p>
+    <h3>Age</h3>
+    <p id = "userAge"></p>
+    <a href="" id = "userInsta" style="text-decoration: none;"><img src="images/instalogo.png"></a>
+</div>
 </div>
 
-<div class="registration">
+<footer>
+    <div class="up-footer">
+        <div class="first-column">
+            <p>UIDE</p>
+            <p>ZHANNURHAN ARYSTAMBEK</p>
+            <p>SHAKMAN AMINA</p>
+            <p>ZHUBANDYK ERSULTAN</p>
+        </div>
+        <div class="second-column">
+            <p>FRONT-END FINAL PROJECT</p>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <h1>UIDE</h1>
+        <p>©2022</p>
+    </div>
+</footer>
+</div>
+<div class="registration" id="registration">
     <form>
         <div class="container-registration">
             <h1>Register</h1>
@@ -115,19 +135,19 @@
         </div>
 
         <div><p>Already have an account?</p>
-        <p id = "login">Login</p>
+        <p id = "login" onclick="swapToLogin()">Login</p>
         </div>
     </form>
 </div>
 
-<div class="signin">
+<div class="signin" id = "signin">
     <form>
     <div class="container-signin">
         <h1>Sign in</h1>
 
         <label for="signEmail"><b>Email</b></label>
         <input
-                type="text"
+                type="email"
                 placeholder="Enter Email"
                 name="signEmail"
                 id="signEmail"
@@ -143,11 +163,11 @@
                 required
         />
 
-        <button type="submit">Sign In</button>
+        <button type="submit" onclick="logIn(signEmail.value, signPwd.value)">Sign In</button>
     </div>
 
     <div><p>You don't have a account?</p>
-        <p id = "reg">Registration</p>
+        <p id = "reg" onclick="swapToReg()">Registration</p>
     </div>
     </form>
 </div>

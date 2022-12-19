@@ -627,4 +627,25 @@ footer{
     cursor: pointer;
 }
 
+.registration{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 38%;
+    background-color: #f7f7f5;
+    display: none;
+}
 
+.signin {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 38%;
+    display: none;
+    background-color: #f7f7f5;
+}
+
+#logSign {
+ width: 30px;
+    height: 40px;
+}
