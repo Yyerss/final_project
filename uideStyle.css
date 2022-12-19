@@ -44,7 +44,7 @@ header h1 {
     justify-content: center;
 }
 .categories-video video{
-    width: 30vw;
+    width: 33vw;
     border-radius: 15%;
 }
 
@@ -64,18 +64,22 @@ header h1 {
     background-color: #f7f7f5;
     border-radius: 20px;
     border: 1px solid;
-    margin-right: 5px;
+    margin-right: 10px;
     transition: .3s;
     cursor: pointer;
+
 }
 
 .categories button a {
     text-decoration: none;
     color: black;
+
 }
 
 .container-courses button:hover {
-    background-color: #5B79FFFF;
+    background-color: black;
+    color: white;
+    transform: scale(1.15);
 }
 
 .container-information{
@@ -103,6 +107,11 @@ header h1 {
     width: 12em;
     border-radius: 5%;
     padding: 15px 10px;
+    transition: .3s;
+}
+
+.info:hover{
+    transform: scale(1.1);
 }
 
 .info-p {
@@ -263,7 +272,7 @@ header h1 {
     text-align: center;
     align-items: center;
     color:#f7f7f5;
-
+    transition: .3s;
 }
 .card2{
     width: 560px;
@@ -274,6 +283,7 @@ header h1 {
     align-items: center;
     color:#242424;
     margin: 15px;
+    transition: .3s;
 }
 .card3{
     width: 560px;
@@ -284,6 +294,7 @@ header h1 {
     align-items: center;
     color:#242424;
     margin: 15px;
+    transition: .3s;
 }
 .card4{
      width: 560px;
@@ -294,8 +305,20 @@ header h1 {
     align-items: center;
     color:#f7f7f5;
     margin: 15px;
-
+    transition: .3s;
  }
+.card1:hover{
+    transform: scale(1.05);
+}
+.card2:hover{
+    transform: scale(1.05);
+}
+.card3:hover{
+    transform: scale(1.05);
+}
+.card4:hover{
+    transform: scale(1.05);
+}
 
 .container-cards img {
     width: 40%;

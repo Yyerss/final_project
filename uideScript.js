@@ -22,6 +22,13 @@ function changePage(element) {
 
 }
 
+    function rotateP(element) {
+        console.log("ers chers")
+        $(element).animate({
+            width: '+=100px',
+            transform: 'rotate(360deg)'
+        },"slow")
+    }
 
     const slides = document.querySelectorAll(".slide");
 
