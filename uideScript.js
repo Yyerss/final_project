@@ -2,19 +2,25 @@
 var course = "";
 var backgroundColor = "";
 var img = "";
+
 function changePage(element) {
     course = element.getElementsByTagName("h2")[0].innerHTML;
     backgroundColor = element.style.backgroundColor;
     img = element.getElementsByTagName("img")[0].src;
-    window.location.href = 'course.html';
-}
-
-function whenLoad() {
     console.log(course);
-    document.getElementById("course-name").innerHTML = "Därıs" + " " + course;
+    $.ajax({
+        url: 'courseAttributesInsert.php',
+        type: 'POST',
+        data: {courseName: course,backgroundColor: backgroundColor, imgSrc:img},
+        success: function() {
+            window.location.href = 'course.html';
+        },
+        error: function() {
+            console.log('error');
+        }
+    });
 
 }
-
 
 
     const slides = document.querySelectorAll(".slide");
@@ -52,5 +58,6 @@ function whenLoad() {
             slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
         });
     });
+
 
 
