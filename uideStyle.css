@@ -442,3 +442,35 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
 }
+.track{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+.track img{
+    width: 40px;
+    height: 40px;
+}
+.playlist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10%;
+}
+.gradient{
+    background: rgb(1,233,255);
+    background: linear-gradient(0deg, rgba(1,233,255,1) 0%, rgba(213,252,251,1) 0%, rgba(247,247,245,1) 85%);
+}
+.audio-track{
+    margin: auto;
+    width: 150px;
+    height: 3px;
+    background-color: #dddddd;
+}
+.time{
+    width: 0;
+    height: 3px;
+    background-color: #474747;
+}
