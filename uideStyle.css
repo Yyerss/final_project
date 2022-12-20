@@ -649,6 +649,7 @@ footer{
     height: 40px;
 }
 
+
 .alash {
     display: none;
     margin: 20px 10%;
@@ -664,3 +665,134 @@ footer{
 
 }
 
+@media screen and (max-width: 1199px) {
+
+    .btn{
+        top: 170%;
+    }
+
+    .info {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+
+    .btn{
+        top: 80%;
+    }
+
+    .container-carousel{
+        display: none;
+    }
+
+    .alash{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-courses{
+        flex-direction: column-reverse;
+    }
+
+    .container-courses video{
+        width: 100%;
+    }
+
+    .container-courses img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .container-courses button {
+        margin-bottom: 10px;
+    }
+    .leftPartProfile{
+        align-items: center;
+    }
+    .me{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #logSign{
+        width: 15px;
+        height: 20px;
+    }
+    .centerProfile img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    header h1 {
+        font-size: 20px;
+    }
+    .navbar a{
+        font-size: 11px;
+        line-height: 26px;
+    }
+    .container-courses h1 {
+        font-size: 35px;
+    }
+    .container-courses button {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .alash p {
+        font-size: 14px;
+    }
+    .container-information h2 {
+        font-size: 25px;
+    }
+    .info {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .left-diagonal-button {
+        width: 40%;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    .right-diagonal-button {
+        width: 35%;
+        height: 25px;
+        font-size: 11px;
+
+    }
+
+    .card1{
+        width: 560px;
+        height: 350px;
+    }
+    .card2{
+        width: 560px;
+        height: 350px;
+    }
+    .card3{
+        width: 560px;
+        height: 350px;
+    }
+    .card4{
+        width: 560px;
+        height: 350px;
+    }
+    .container-cards p {
+        font-size: 12px;
+    }
+    .up-footer{
+        font-size:11px;
+    }
+    .second-column{
+        text-align: right;
+    }
+}
