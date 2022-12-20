@@ -696,6 +696,10 @@ footer{
     .info {
         margin-bottom: 10px;
     }
+
+    .about-course{
+        flex-direction: column-reverse;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -733,6 +737,11 @@ footer{
 
     .track{
         width: 100%;
+    }
+
+    .about-course img{
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -798,5 +807,14 @@ footer{
     }
     .second-column{
         text-align: right;
+    }
+
+    .about-course h1{
+        font-size: 30px;
+    }
+
+    .about-course button{
+        width: 100%;
+
     }
 }
