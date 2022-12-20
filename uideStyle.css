@@ -435,6 +435,7 @@ footer{
     border-radius: 2%;
 }
 
+
 .whom-p {
     font-family: Graphik,sans-serif;
     font-size: 40px;
@@ -451,6 +452,10 @@ footer{
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 5px 15px;
+    transition: .3s;
+}
+.whom:hover{
+    transform: scale(1.1);
 }
 
 .main-icon{
@@ -676,6 +681,8 @@ footer{
     padding: 10px;
     border-radius: 10px;
     border: 2px solid black;
+    width: 253px;
+    height: 230px;
 }
 .navBuy{
     display: flex;
@@ -690,7 +697,6 @@ footer{
 .forma{
     display: flex;
     flex-direction: column;
-    width: 15vw;
 }
 
 .forma input{
