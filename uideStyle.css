@@ -470,7 +470,7 @@ footer{
 }
 .track{
     height: 50px;
-    background-color:#1c45dd;
+    background-color:#7bc1ac;
     border-radius: 10px;
     border-color: grey;
     width: 50%;
@@ -490,7 +490,7 @@ footer{
 }
 .track h3{
     width: 200px;
-    color: white;
+    color: black;
     margin-left: 5%;
     margin-top: auto;
     margin-bottom: auto;

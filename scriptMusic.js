@@ -48,12 +48,12 @@ function playMusic(id){
         setInterval(function (){
             let audiotime = Math.round(audio.currentTime)
             let audioLength = Math.round(audio.duration)
-            if (audiotime == audioLength && treck<11){
+            if (audiotime === audioLength && treck<11){
                 treck++;
                 audio.src='music/'+playlist[treck];
                 audio.currentTime=0;
                 audio.play();
-            }else if (audiotime == audioLength && treck>=11){
+            }else if (audiotime === audioLength && treck>=11){
                 treck=0;
                 audio.src='music/'+playlist[treck]
                 audio.currentTime=0;
@@ -63,7 +63,4 @@ function playMusic(id){
         },10)
 
     }
-
-
-
 }
