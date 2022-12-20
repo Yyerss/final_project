@@ -7,42 +7,170 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
+
+<div class="mainProfile" id = "mainProfile">
 <header>
-    <h1>UIDE</h1>
-    <div class="navbar">
-        <a href="aboutus.html">Bız jaily</a>
-        <a href="#">Chill</a>
-        <a href="#">Profile</a>
-    </div>
+    <h1 onclick="window.location.href = 'uide.html'">UIDE</h1>
+<div class="navbar">
+    <a href="aboutus.html">Bız jaily</a>
+    <a href="chillPage.html">Chill</a>
+    <a href="profile.html">Profile</a>
+    <img src="images/logSign.png" onclick="swapToSign()" id = "logSign">
+</div>
 </header>
 
+
 <div class="profileText">
-    <h1>Profile</h1>
+<h1>Profile</h1>
 </div>
 <div class="me">
-    <div class="leftPartProfile">
-        <h1>About you</h1>
-        <p></p>
-    </div>
-    <div class="centerProfile">
-        <img src="images/user.png">
-    </div>
-    <div class="rightPartProfile">
-        <h1>Details</h1>
-        <h3>Name</h3>
-        <p id = "nameUser"></p>
-        <h3>Age</h3>
-        <p id = "location"></p>
-        <img src="images/instalogo.png">
-    </div>
+<div class="leftPartProfile">
+    <h1>About you</h1>
+    <p id = "aboutMe"></p>
+</div>
+<div class="centerProfile">
+    <img src="images/user.png">
+</div>
+<div class="rightPartProfile">
+    <h1>Details</h1>
+    <h3>Name</h3>
+    <p id = "nameUser"></p>
+    <h3>Age</h3>
+    <p id = "userAge"></p>
+    <a href="" id = "userInsta" style="text-decoration: none;"><img src="images/instalogo.png"></a>
+</div>
 </div>
 
-<div class="registration">
-    <form action=""></form>
+<footer>
+    <div class="up-footer">
+        <div class="first-column">
+            <p>UIDE</p>
+            <p>ZHANNURHAN ARYSTAMBEK</p>
+            <p>SHAKMAN AMINA</p>
+            <p>ZHUBANDYK ERSULTAN</p>
+        </div>
+        <div class="second-column">
+            <p>FRONT-END FINAL PROJECT</p>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <h1>UIDE</h1>
+        <p>©2022</p>
+    </div>
+</footer>
+</div>
+<div class="registration" id="registration">
+    <form>
+        <div class="container-registration">
+            <h1>Register</h1>
+            <p>Kindly fill in this form to register.</p>
+
+            <label for="name"><b>Name</b></label>
+            <input
+                    type="text"
+                    placeholder="Enter Name"
+                    id="name1"
+                    required
+            />
+
+            <label for="surname"><b>Surname</b></label>
+            <input
+                    type="text"
+                    placeholder="Enter Surname"
+                    id="surname"
+                    required
+            />
+
+            <label for="email"><b>Email</b></label>
+            <input
+                    type="email"
+                    placeholder="Enter Email"
+                    id="email"
+                    required
+            />
+
+            <label for="age"><b>Age</b></label>
+            <input
+                    type="number"
+                    placeholder="Enter Age"
+                    id="age"
+                    required
+            />
+
+            <label for="pwd"><b>Password</b></label>
+            <input
+                    type="password"
+                    placeholder="Enter Password"
+                    id="pwd"
+                    required
+            />
+            
+            <label for="pwd-repeat"><b>Repeat Password</b></label>
+            <input
+                    type="password"
+                    placeholder="Repeat Password"
+                    id="pwdRepeat"
+                    required
+            />
+
+            <label for="about"><b>About You</b></label>
+            <input
+                    type="text"
+                    placeholder="Info About You"
+                    id="about"
+                    required
+            />
+
+            <label for="insta"><b>Your Instagram</b></label>
+            <input
+                    type="text"
+                    placeholder="Instagram"
+                    id="insta"
+                    required
+            />
+
+            
+ <button type ="submit" onclick="rega(name1.value,surname.value,email.value,age.value,about.value,insta.value,pwd.value,pwdRepeat.value)">Register</button>
+
+        </div>
+
+        <div><p>Already have an account?</p>
+        <p id = "login" onclick="swapToLogin()">Login</p>
+        </div>
+    </form>
 </div>
 
-<div class="signin">
-    
+<div class="signin" id = "signin">
+    <form>
+    <div class="container-signin">
+        <h1>Sign in</h1>
+
+        <label for="signEmail"><b>Email</b></label>
+        <input
+                type="email"
+                placeholder="Enter Email"
+                name="signEmail"
+                id="signEmail"
+                required
+        />
+
+        <label for="signPwd"><b>Password</b></label>
+        <input
+                type="password"
+                placeholder="Enter Password"
+                name="signPwd"
+                id="signPwd"
+                required
+        />
+
+        <button type="submit" onclick="logIn(signEmail.value, signPwd.value)">Sign In</button>
+    </div>
+
+    <div><p>You don't have a account?</p>
+        <p id = "reg" onclick="swapToReg()">Registration</p>
+    </div>
+    </form>
 </div>
+<script type="text/javascript" src = "profile.js" ></script>
 </body>
 </html>

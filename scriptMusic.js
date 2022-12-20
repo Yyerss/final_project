@@ -14,23 +14,37 @@ let playlist = [
 ];
 var times = document.getElementsByClassName("time")
 let treck=0;
-
+let pause;
 function playMusic(id){
     document.getElementById("1").pause()
+    document.getElementById("1").currentTime=0
     document.getElementById("2").pause()
+    document.getElementById("2").currentTime=0;
     document.getElementById("3").pause()
+    document.getElementById("3").currentTime=0;
     document.getElementById("4").pause()
+    document.getElementById("4").currentTime=0;
     document.getElementById("5").pause()
+    document.getElementById("5").currentTime=0;
     document.getElementById("6").pause()
+    document.getElementById("6").currentTime=0;
     document.getElementById("7").pause()
+    document.getElementById("7").currentTime=0;
     document.getElementById("8").pause()
+    document.getElementById("8").currentTime=0;
     document.getElementById("9").pause()
+    document.getElementById("9").currentTime=0;
     document.getElementById("10").pause()
+    document.getElementById("10").currentTime=0;
     document.getElementById("11").pause()
+    document.getElementById("11").currentTime=0;
     let audio = document.getElementById(id)
-    if (play == 0){
+ if (pause == audio) {
+        audio.pause()
+    }else if (play == 0){
         audio.play()
-        play++;
+        // play++;
+        pause = document.getElementById(id);
         setInterval(function (){
             let audiotime = Math.round(audio.currentTime)
             let audioLength = Math.round(audio.duration)
@@ -48,10 +62,8 @@ function playMusic(id){
             }
         },10)
 
-    }else if (play==1){
-        audio.pause();
-        play=0;
     }
+
 
 
 }

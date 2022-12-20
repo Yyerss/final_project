@@ -14,7 +14,6 @@ var img = "";
                     document.getElementById('course-name').innerHTML = course;
                     document.getElementById('about-course').style.backgroundColor = backgroundColor;
                     document.getElementById('courseImg').src = img;
-
                 }
            });
         
