@@ -665,6 +665,52 @@ footer{
 
 }
 
+.container-buy {
+    position: absolute;
+    z-index: 100;
+    display: none;
+    top: 50%;
+    left: 10%;
+    font-family: Graphik,sans-serif;
+    background-color: #f7f7f5;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.navBuy{
+    display: flex;
+    justify-content: right;
+    width: 15vw;
+}
+.navBuy img{
+    width: 20px;
+    height: 20px;
+}
+
+.forma{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+.forma input{
+    margin: 0.25em 0em 1em 0em;
+    outline: none;
+    padding: 0.5em;
+    border: none;
+    background-color: rgb(225, 225, 225);
+    border-radius: 0.25em;
+    color: black;
+}
+.forma button{
+    padding: 0.75em;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-radius: 0.25em;
+}
+
 @media screen and (max-width: 1199px) {
 
     .btn{

@@ -22,7 +22,7 @@
                 <p>
                     Sız būl därıstı tañdau arqyly osy zatty üirenuge, üzdık boluğa alğaşqy qadamdaryñyzdy jasaisyz. Köptegen närselerdı üirenu arqyly kürdelı tapsyrmalardy oryndap, özıñızdıñ bılımıñızdı şyñdaisyz.
                 </p>
-                <button>
+                <button onclick="jazyl()">
                     Jazylu
                 </button>
             </div>
@@ -55,6 +55,7 @@
                     </p>
                 </div>
             </div>
+
         </div>
         <footer>
             <div class="up-footer">
@@ -73,6 +74,26 @@
                 <p>©2022</p>
             </div>
         </footer>
+
+        <div class="container-buy" id = "container-buy">
+            <div class="navBuy">
+                <img src="images/close.png" onclick="jabu()">
+            </div>
+            <form>
+                <div class="forma">
+                    <p>Email engızgennen keiın sızge habarlama keledı. <br> Formany mūqiat toltyryñyz!</p>
+                    <label for="emailBuy"><b>Email</b></label>
+                    <input
+                            type="email"
+                            placeholder="Enter Email"
+                            id="emailBuy"
+                            required
+                    />
+                    <button type="submit" onclick="buy(emailBuy.value)">Jıberu</button>
+                </div>
+
+            </form>
+        </div>
     </main>
     <script src="course.js"></script>
 </body>
