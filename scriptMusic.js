@@ -39,9 +39,9 @@ function playMusic(id){
     document.getElementById("11").pause()
     document.getElementById("11").currentTime=0;
     let audio = document.getElementById(id)
- if (pause == audio) {
+ if (pause === audio) {
         audio.pause()
-    }else if (play == 0){
+    }else if (play === 0){
         audio.play()
         // play++;
         pause = document.getElementById(id);
@@ -50,7 +50,7 @@ function playMusic(id){
             let audioLength = Math.round(audio.duration)
             if (audiotime == audioLength && treck<11){
                 treck++;
-                audio.src='music/'+playlist[treck]
+                audio.src='music/'+playlist[treck];
                 audio.currentTime=0;
                 audio.play();
             }else if (audiotime == audioLength && treck>=11){

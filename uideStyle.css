@@ -681,7 +681,9 @@ footer{
     .btn{
         top: 80%;
     }
-
+    .profileText{
+        text-align: start;
+    }
     .container-carousel{
         display: none;
     }
@@ -715,9 +717,7 @@ footer{
     .container-courses button {
         margin-bottom: 10px;
     }
-    .leftPartProfile{
-        align-items: center;
-    }
+
     .me{
         flex-direction: column;
         justify-content: center;
@@ -729,6 +729,10 @@ footer{
     .centerProfile img{
         width: 150px;
         height: 150px;
+    }
+
+    .track{
+        width: 100%;
     }
 }
 
