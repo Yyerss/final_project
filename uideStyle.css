@@ -224,12 +224,12 @@ header h1 {
 }
 
 .btn-prev {
-    top: 160%;
+    top: 150%;
     left: 13%;
 }
 
 .btn-next {
-    top: 160%;
+    top: 150%;
     right: 13%;
 }
 .slider {
@@ -752,6 +752,12 @@ footer{
     .about-course{
         flex-direction: column-reverse;
     }
+
+
+    .track h3 {
+        font-size: 13px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -766,6 +772,9 @@ footer{
 
     .container-courses img{
         width: 100%;
+    }
+    .track h3 {
+        font-size: 10px;
     }
 }
 
@@ -795,6 +804,8 @@ footer{
         width: 200px;
         height: 200px;
     }
+
+
 }
 
 @media screen and (max-width: 479px) {
@@ -867,6 +878,5 @@ footer{
 
     .about-course button{
         width: 100%;
-
     }
 }

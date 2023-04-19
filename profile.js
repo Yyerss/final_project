@@ -91,7 +91,6 @@ function swapToReg() {
               about = json[0]['about_user'];
               age = json[0]['age'];
               insta = json[0]['user_insta'];
-
                 document.getElementById("aboutMe").innerHTML = about;
                 document.getElementById("nameUser").innerHTML = name + " " + surname;
                 document.getElementById("userAge").innerHTML = age.toString();
